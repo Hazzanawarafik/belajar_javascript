@@ -4,12 +4,50 @@
 // }
 // console.log('setelah pembanding');
 
-let angka = Math.random();
-console.log(angka);
+// let angka = Math.random();
+// console.log(angka);
 
-if(angka >= 0.5){
-    console.log("Angka lebih besar dari 0,5");
+
+//----------------------------------------------------  if statement
+// if(angka >= 0.5){
+//     console.log("Angka lebih besar dari 0,5");
+// }
+// if(angka <= 0.5){
+//     console.log("Angka lebih kecil dari 0,5");
+// }
+
+
+// ---------------------------------------------- else if statement
+let age = 15;
+
+if(age === 18){
+    console.log("Boleh.... Boleh... Boleh masuk");
+}else if(age === 15){
+    console.log ("Perlu dibimbing orang tua ya");
+}else if (age === 8){
+    console.log("Udah pergi ke dokter gigi?")
 }
-if(angka <= 0.5){
-    console.log("Angka lebih kecil dari 0,5");
+
+// const iniHari = 'Sabtu';
+
+// if(iniHari === 'Senin'){
+//     console.log("Selamat bekerja kawan!");
+// }else if(iniHari === 'Sabtu'){
+//     console.log("Semoga jangan cepat berlalu");
+// }
+
+const nilai = '30';
+
+if(nilai < 50){
+    console.log('E');
+}else if (nilai < 60){
+    console.log('D');
+}else if (nilai < 70){
+    console.log('C');
+}else if (nilai < 80){
+    console.log('B');
+}else if (nilai < 100){
+    console.log('A');
 }
+
+
