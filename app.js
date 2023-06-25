@@ -63,16 +63,34 @@
 // }
 
 // ---------------------------------------------------- Cek kondisi berlapis 
+// const password = prompt("Buat password");
+
+// // Password harus sepanjang 6 karakter
+// if(password.length >= 6){
+//     if(password.indexOf(' ') === -1){
+//     console.log("Password Valid");
+//     }else{
+//         console.log("Password tidak boleh ada spasi");
+//     }
+// }else{
+//     console.log("Password minimal 6 karakter");
+// }
+
+// ---------------------------------------------------- Logical Operators
+// && = And 2 kondisinya harus true
+// || = OR
+// / = NOT
+
+// let age = 19;
+// let gender = 'male';
+
+// if(gender === 'male' && age === 19){
+//     console.log("Legal!"); 
+// }
+
 const password = prompt("Buat password");
-
-// Password harus sepanjang 6 karakter
-if(password.length >= 6){
-    if(password.indexOf(' ') === -1){
-    console.log("Password Valid");
-    }else{
-        console.log("Password tidak boleh ada spasi");
-    }
+if(password.length >= 6 && password.indexOf(' ') === -1){
+    console.log('Password Valid');
 }else{
-    console.log("Password minimal 6 karakter");
+    console.log('Password tidak memenuhi syarat');
 }
-
