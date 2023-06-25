@@ -76,9 +76,9 @@
 //     console.log("Password minimal 6 karakter");
 // }
 
-// ---------------------------------------------------- Logical Operators
+// ---------------------------------------------------- Logical Operators AND
 // && = And 2 kondisinya harus true
-// || = OR
+// || = OR 2 kondisinya salah baru bernilai salah
 // / = NOT
 
 // let age = 19;
@@ -88,9 +88,25 @@
 //     console.log("Legal!"); 
 // }
 
-const password = prompt("Buat password");
-if(password.length >= 6 && password.indexOf(' ') === -1){
-    console.log('Password Valid');
+// const password = prompt("Buat password");
+// if(password.length >= 6 && password.indexOf(' ') === -1){
+//     console.log('Password Valid');
+// }else{
+//     console.log('Password tidak memenuhi syarat');
+// }
+
+// ---------------------------------------------------- Logical Operators OR
+
+// let age = 15;
+
+// if(age === 18 || age === 20){
+//     console.log("Selaamt berjuang anak muda !");
+// }
+
+const role = prompt('masukan role akun');
+
+if(role === 'admin' || role === 'spv'){
+    console.log('boleh mengaksesnya');
 }else{
-    console.log('Password tidak memenuhi syarat');
+    console.log('akses ditolak');
 }
