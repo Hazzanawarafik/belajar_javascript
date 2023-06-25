@@ -52,13 +52,27 @@
 
 // ---------------------------------------------------- else statement
 
-const iniHari = prompt('Isikan Hari!').toLowerCase();
+// const iniHari = prompt('Isikan Hari!').toLowerCase();
 
-if(iniHari === 'senin'){
-    console.log('Selamat Bekerja Kawan !');
-}else if (iniHari === 'sabtu'){
-    console.log('Semoga jangan cepat berlalu!');
-} else{
-    console.log('Yah biasa aja');
+// if(iniHari === 'senin'){
+//     console.log('Selamat Bekerja Kawan !');
+// }else if (iniHari === 'sabtu'){
+//     console.log('Semoga jangan cepat berlalu!');
+// } else{
+//     console.log('Yah biasa aja');
+// }
+
+// ---------------------------------------------------- Cek kondisi berlapis 
+const password = prompt("Buat password");
+
+// Password harus sepanjang 6 karakter
+if(password.length >= 6){
+    if(password.indexOf(' ') === -1){
+    console.log("Password Valid");
+    }else{
+        console.log("Password tidak boleh ada spasi");
+    }
+}else{
+    console.log("Password minimal 6 karakter");
 }
 
