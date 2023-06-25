@@ -17,16 +17,16 @@
 // }
 
 
-// ---------------------------------------------- else if statement
-let age = 15;
+// ---------------------------------------------------- else if statement
+// let age = 15;
 
-if(age === 18){
-    console.log("Boleh.... Boleh... Boleh masuk");
-}else if(age === 15){
-    console.log ("Perlu dibimbing orang tua ya");
-}else if (age === 8){
-    console.log("Udah pergi ke dokter gigi?")
-}
+// if(age === 18){
+//     console.log("Boleh.... Boleh... Boleh masuk");
+// }else if(age === 15){
+//     console.log ("Perlu dibimbing orang tua ya");
+// }else if (age === 8){
+//     console.log("Udah pergi ke dokter gigi?")
+// }
 
 // const iniHari = 'Sabtu';
 
@@ -36,18 +36,29 @@ if(age === 18){
 //     console.log("Semoga jangan cepat berlalu");
 // }
 
-const nilai = '30';
+// const nilai = '30';
 
-if(nilai < 50){
-    console.log('E');
-}else if (nilai < 60){
-    console.log('D');
-}else if (nilai < 70){
-    console.log('C');
-}else if (nilai < 80){
-    console.log('B');
-}else if (nilai < 100){
-    console.log('A');
+// if(nilai < 50){
+//     console.log('E');
+// }else if (nilai < 60){
+//     console.log('D');
+// }else if (nilai < 70){
+//     console.log('C');
+// }else if (nilai < 80){
+//     console.log('B');
+// }else if (nilai < 100){
+//     console.log('A');
+// }
+
+// ---------------------------------------------------- else statement
+
+const iniHari = prompt('Isikan Hari!').toLowerCase();
+
+if(iniHari === 'senin'){
+    console.log('Selamat Bekerja Kawan !');
+}else if (iniHari === 'sabtu'){
+    console.log('Semoga jangan cepat berlalu!');
+} else{
+    console.log('Yah biasa aja');
 }
-
 
