@@ -123,42 +123,62 @@
 
 // ---------------------------------------------------- SWITCH 
 
-const day = 4;
-switch(day){
-    case 1:
-        console.log("Sunday");
-        break;
-    case 2:
-        console.log("Monday");
-        break;
-    case 3:
-        console.log("Tuesday");
-        break;
-    case 4:
-        console.log("Wednesday");
-        break;
-    case 5:
-        console.log("Thursday");
-        break;
-    case 6:
-        console.log("Friday");
-        break;
-    case 7:
-        console.log("Saturday");
-        break;
-    default:
-        console.log("Invalid Day");
-        break;
-}
+// const day = 4;
+// switch(day){
+//     case 1:
+//         console.log("Sunday");
+//         break;
+//     case 2:
+//         console.log("Monday");
+//         break;
+//     case 3:
+//         console.log("Tuesday");
+//         break;
+//     case 4:
+//         console.log("Wednesday");
+//         break;
+//     case 5:
+//         console.log("Thursday");
+//         break;
+//     case 6:
+//         console.log("Friday");
+//         break;
+//     case 7:
+//         console.log("Saturday");
+//         break;
+//     default:
+//         console.log("Invalid Day");
+//         break;
+// }
 
-const balonku = prompt('input warna balon');
-switch(balonku){
-    case 'merah':
-        console.log('warna merah');
-        break;
-    case 'hijau':
-        console.log('doorrr');
-        break;
-    default:
-        console.log('bukan balon saya');
-}
+// const balonku = prompt('input warna balon');
+// switch(balonku){
+//     case 'merah':
+//         console.log('warna merah');
+//         break;
+//     case 'hijau':
+//         console.log('doorrr');
+//         break;
+//     default:
+//         console.log('bukan balon saya');
+// }
+
+// ---------------------------------------------------- ARRAY
+
+// membuat array kosong
+let peserta = [];
+
+// kumpulan string
+let warna = ['hijau','kuning','kelab','bu'];
+
+// kumpulan angka
+let angka = [1,3,4,6,9];
+
+// kumpulan tipe campuran
+let status = [true,1,'cat',null];
+
+
+console.log(peserta);
+console.log(warna);
+console.log(angka);
+console.log(status);
