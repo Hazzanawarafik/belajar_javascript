@@ -113,10 +113,52 @@
 
 // ---------------------------------------------------- Logical Operators NOT
 
-const role = prompt('masukan role akun');
+// const role = prompt('masukan role akun');
 
-if(role !== 'admin'){
-    console.log('akses ditolak');
-}else{
-    console.log('boleh mengaksesnya');
+// if(role !== 'admin'){
+//     console.log('akses ditolak');
+// }else{
+//     console.log('boleh mengaksesnya');
+// }
+
+// ---------------------------------------------------- SWITCH 
+
+const day = 4;
+switch(day){
+    case 1:
+        console.log("Sunday");
+        break;
+    case 2:
+        console.log("Monday");
+        break;
+    case 3:
+        console.log("Tuesday");
+        break;
+    case 4:
+        console.log("Wednesday");
+        break;
+    case 5:
+        console.log("Thursday");
+        break;
+    case 6:
+        console.log("Friday");
+        break;
+    case 7:
+        console.log("Saturday");
+        break;
+    default:
+        console.log("Invalid Day");
+        break;
+}
+
+const balonku = prompt('input warna balon');
+switch(balonku){
+    case 'merah':
+        console.log('warna merah');
+        break;
+    case 'hijau':
+        console.log('doorrr');
+        break;
+    default:
+        console.log('bukan balon saya');
 }
