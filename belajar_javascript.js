@@ -297,7 +297,16 @@
 // console.log(KumpulWarna);
 
 // ---------------------------------------------------- Nested Array
-const board = [
-    [null,null,'0'],['O','X',null],['X',null,'0']
-];
-console.log(board);
+// const board = [
+//     [null,null,'0'],['O','X',null],['X',null,'0']
+// ];
+// console.log(board);
+
+
+// ---------------------------------------------------- Apa itu Object
+const fitnessData = {
+    totalSteps : 13411234,
+    totalMiles : 119.2,
+    avgCaloriesburn : 6654,
+}
+console.log(fitnessData);
