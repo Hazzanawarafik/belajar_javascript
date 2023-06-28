@@ -198,14 +198,14 @@
 // pop - menghapus item dari paling akhir Array
 // shift - menghapus item dari paling awal Array
 // unshift - menambahkan item pada awal Array
-let barbel = [];
+// let barbel = [];
 // barbel.push(5);
 // barbel.push(6);
 // barbel.push(7);
 // barbel.pop();
 // barbel.shift();
 // barbel.unshift(3);
-console.log(barbel);
+// console.log(barbel);
 
 // ---------------------------------------------------- Beberapa method array yang sering digunakan
 // concat - menggabungkan Array
@@ -288,10 +288,16 @@ console.log(barbel);
 // console.log(elements.join('-'));
 
 // ---------------------------------------------------- Beberapa method array yang sering digunakan
-const PI = 3.14;
-// PI = 123;
-// console.log(PI);
+// const PI = 3.14;
+// // PI = 123;
+// // console.log(PI);
 
-const KumpulWarna = ['Merah','Kuning','Hijau','Ungu'];
-KumpulWarna.push('Biru');
-console.log(KumpulWarna);
+// const KumpulWarna = ['Merah','Kuning','Hijau','Ungu'];
+// KumpulWarna.push('Biru');
+// console.log(KumpulWarna);
+
+// ---------------------------------------------------- Nested Array
+const board = [
+    [null,null,'0'],['O','X',null],['X',null,'0']
+];
+console.log(board);
