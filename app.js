@@ -254,35 +254,44 @@ console.log(barbel);
 // console.log(dataBaru);
 
 
-// -------splice
-const bulan = ['Jan','March','April','June'];
-bulan.splice(1,0,'Feb');
-console.log(bulan);
-bulan.splice(4,1,'May');
-console.log(bulan);
+// // -------splice
+// const bulan = ['Jan','March','April','June'];
+// bulan.splice(1,0,'Feb');
+// console.log(bulan);
+// bulan.splice(4,1,'May');
+// console.log(bulan);
 
-// -------slice
-const animals = ['ant','bison','camel','duck','elephant'];
-console.log(animals.slice(2));
-console.log(animals.slice(2,4));
-console.log(animals.slice(1,5));
-console.log(animals.slice(-2));
-console.log(animals.slice(2,-1));
-console.log(animals.slice());
-
-
-// -------reverse
-const dataReverse = ['one','two','three','four'];
-console.log('dataReverse',dataReverse);
-
-const Reversed = dataReverse.reverse();
-console.log('reversed',Reversed);
-
-console.log('dataReverse',dataReverse);
+// // -------slice
+// const animals = ['ant','bison','camel','duck','elephant'];
+// console.log(animals.slice(2));
+// console.log(animals.slice(2,4));
+// console.log(animals.slice(1,5));
+// console.log(animals.slice(-2));
+// console.log(animals.slice(2,-1));
+// console.log(animals.slice());
 
 
-// -------Join
-const elements = ['Fire','Air','Water'];
-console.log(elements.join());
-console.log(elements.join(''));
-console.log(elements.join('-'));
+// // -------reverse
+// const dataReverse = ['one','two','three','four'];
+// console.log('dataReverse',dataReverse);
+
+// const Reversed = dataReverse.reverse();
+// console.log('reversed',Reversed);
+
+// console.log('dataReverse',dataReverse);
+
+
+// // -------Join
+// const elements = ['Fire','Air','Water'];
+// console.log(elements.join());
+// console.log(elements.join(''));
+// console.log(elements.join('-'));
+
+// ---------------------------------------------------- Beberapa method array yang sering digunakan
+const PI = 3.14;
+// PI = 123;
+// console.log(PI);
+
+const KumpulWarna = ['Merah','Kuning','Hijau','Ungu'];
+KumpulWarna.push('Biru');
+console.log(KumpulWarna);
