@@ -217,40 +217,72 @@ console.log(barbel);
 // splice - menghapus atau mengubah Element
 // sort - mengurutkan nilai pada array
 
-// -------concat
-const array1 = ['a','b','c'];
-const array2 = ['d','e','f'];
+// // -------concat
+// const array1 = ['a','b','c'];
+// const array2 = ['d','e','f'];
 
-const array3 =  array2.concat(array1);
-console.log(array3);
+// const array3 =  array2.concat(array1);
+// console.log(array3);
 
-// -------indexOf
+// // -------indexOf
 
-const beast = ['ant','bison','camel','duck','bison'];
+// const beast = ['ant','bison','camel','duck','bison'];
 
-console.log(beast.indexOf('bison'));
+// console.log(beast.indexOf('bison'));
 
-console.log(beast.indexOf('bison','2'));
+// console.log(beast.indexOf('bison','2'));
 
-console.log(beast.indexOf('giraffe'));
+// console.log(beast.indexOf('giraffe'));
 
-// -------includes
-const data1 = [1,2,3];
+// // -------includes
+// const data1 = [1,2,3];
 
-console.log(data1.includes(2));
+// console.log(data1.includes(2));
 
-const pets = ['cat','dog','bat'];
-console.log(pets.includes('cat'));
-console.log(pets.includes('at'));
-
-
-// -------sort
-const months = ['March','Jan','Feb','Dec'];
-months.sort();
-console.log(months);
-
-const dataBaru = [1,30,4,21,10000];
-dataBaru.sort();
-console.log(dataBaru);
+// const pets = ['cat','dog','bat'];
+// console.log(pets.includes('cat'));
+// console.log(pets.includes('at'));
 
 
+// // -------sort
+// const months = ['March','Jan','Feb','Dec'];
+// months.sort();
+// console.log(months);
+
+// const dataBaru = [1,30,4,21,10000];
+// dataBaru.sort();
+// console.log(dataBaru);
+
+
+// -------splice
+const bulan = ['Jan','March','April','June'];
+bulan.splice(1,0,'Feb');
+console.log(bulan);
+bulan.splice(4,1,'May');
+console.log(bulan);
+
+// -------slice
+const animals = ['ant','bison','camel','duck','elephant'];
+console.log(animals.slice(2));
+console.log(animals.slice(2,4));
+console.log(animals.slice(1,5));
+console.log(animals.slice(-2));
+console.log(animals.slice(2,-1));
+console.log(animals.slice());
+
+
+// -------reverse
+const dataReverse = ['one','two','three','four'];
+console.log('dataReverse',dataReverse);
+
+const Reversed = dataReverse.reverse();
+console.log('reversed',Reversed);
+
+console.log('dataReverse',dataReverse);
+
+
+// -------Join
+const elements = ['Fire','Air','Water'];
+console.log(elements.join());
+console.log(elements.join(''));
+console.log(elements.join('-'));
