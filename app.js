@@ -198,12 +198,59 @@
 // pop - menghapus item dari paling akhir Array
 // shift - menghapus item dari paling awal Array
 // unshift - menambahkan item pada awal Array
-// let barbel = [];
+let barbel = [];
 // barbel.push(5);
 // barbel.push(6);
 // barbel.push(7);
-// // barbel.pop();
-// // barbel.shift();
+// barbel.pop();
+// barbel.shift();
 // barbel.unshift(3);
-// console.log(barbel);
+console.log(barbel);
+
+// ---------------------------------------------------- Beberapa method array yang sering digunakan
+// concat - menggabungkan Array
+// includes - mencari suatu nilai di dalam Array
+// indexOf - sama kaya string indexOf
+// join - membuat suatu string dari sebuah Array
+// reverse - membalikan urutan nilai dari Array
+// slice - menyalin sebagian nilai dari Array
+// splice - menghapus atau mengubah Element
+// sort - mengurutkan nilai pada array
+
+// -------concat
+const array1 = ['a','b','c'];
+const array2 = ['d','e','f'];
+
+const array3 =  array2.concat(array1);
+console.log(array3);
+
+// -------indexOf
+
+const beast = ['ant','bison','camel','duck','bison'];
+
+console.log(beast.indexOf('bison'));
+
+console.log(beast.indexOf('bison','2'));
+
+console.log(beast.indexOf('giraffe'));
+
+// -------includes
+const data1 = [1,2,3];
+
+console.log(data1.includes(2));
+
+const pets = ['cat','dog','bat'];
+console.log(pets.includes('cat'));
+console.log(pets.includes('at'));
+
+
+// -------sort
+const months = ['March','Jan','Feb','Dec'];
+months.sort();
+console.log(months);
+
+const dataBaru = [1,30,4,21,10000];
+dataBaru.sort();
+console.log(dataBaru);
+
 
