@@ -186,8 +186,24 @@
 // ---------------------------------------------------- MENGUBAH NILAI ARRAY
 
 // Kumpulan String
-let warna = ['hijau','kuning','kelab','bu'];
+// let warna = ['hijau','kuning','kelab','bu'];
 
-warna[2] = "kelabu";
-warna[3] = "ungu";
-console.log(warna);
+// warna[2] = "kelabu";
+// warna[3] = "ungu";
+// console.log(warna);
+
+// ---------------------------------------------------- Method yang dimiliki array
+
+// push - untuk menambahkan item pada akhir Array
+// pop - menghapus item dari paling akhir Array
+// shift - menghapus item dari paling awal Array
+// unshift - menambahkan item pada awal Array
+// let barbel = [];
+// barbel.push(5);
+// barbel.push(6);
+// barbel.push(7);
+// // barbel.pop();
+// // barbel.shift();
+// barbel.unshift(3);
+// console.log(barbel);
+
