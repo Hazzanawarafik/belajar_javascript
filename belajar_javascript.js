@@ -304,9 +304,22 @@
 
 
 // ---------------------------------------------------- Apa itu Object
-const fitnessData = {
-    totalSteps : 13411234,
-    totalMiles : 119.2,
-    avgCaloriesburn : 6654,
+// const fitnessData = {
+//     totalSteps : 13411234,
+//     totalMiles : 119.2,
+//     avgCaloriesburn : 6654,
+// }
+// console.log(fitnessData);
+
+// ---------------------------------------------------- Cara Membuat Struktur Data Object
+const barang = {
+    judul : 'Sepatu',
+    harga : 2000000,
+    isReady: true,
+    size : ['38','39','40','41','42'],
+    location: {
+        indonesia: 48,
+        singapore: 50
+    }
 }
-console.log(fitnessData);
+console.log(barang);
