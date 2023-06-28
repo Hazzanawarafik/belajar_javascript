@@ -165,20 +165,29 @@
 
 // ---------------------------------------------------- ARRAY
 
-// membuat array kosong
-let peserta = [];
+// // membuat array kosong
+// let peserta = [];
 
-// kumpulan string
+// // kumpulan string
+// let warna = ['hijau','kuning','kelab','bu'];
+
+// // kumpulan angka
+// let angka = [1,3,4,6,9];
+
+// // kumpulan tipe campuran
+// let status = [true,1,'cat',null];
+
+
+// console.log(peserta);
+// console.log(warna);
+// console.log(angka);
+// console.log(status);
+
+// ---------------------------------------------------- MENGUBAH NILAI ARRAY
+
+// Kumpulan String
 let warna = ['hijau','kuning','kelab','bu'];
 
-// kumpulan angka
-let angka = [1,3,4,6,9];
-
-// kumpulan tipe campuran
-let status = [true,1,'cat',null];
-
-
-console.log(peserta);
+warna[2] = "kelabu";
+warna[3] = "ungu";
 console.log(warna);
-console.log(angka);
-console.log(status);
