@@ -430,8 +430,25 @@
 // }
 
 // ---------------------------------------------------- Perulangan Dengan Array
-const animals = ['cat','deer','hog','koala'];
+// const animals = ['cat','deer','hog','koala'];
 
-for(let i=0; i<animals.length; i++){
-    console.log(i,animals[i])
+// for(let i=0; i<animals.length; i++){
+//     console.log(i,animals[i])
+// }
+
+
+// ---------------------------------------------------- Nested Loop
+let str = 'LOL';
+for(let i=0; i<=4; i++){
+    console.log('Outer:',i);
+    for(let j=0; j<str.length; j++){
+        console.log('        Inner:',str[j]);
+    }
+}
+const pilihan = 'abcd';
+for(let i = 1; i<=10; i++){
+    console.log(`${i}.Soal Nomor ${i}: `);
+    for(let j = 0; j<pilihan.length; j++){
+        console.log(`    ${pilihan[j]}.Pilihan Jawaban`);
+    }
 }
