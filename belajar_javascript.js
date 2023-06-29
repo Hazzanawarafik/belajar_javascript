@@ -373,36 +373,43 @@
 
 // ---------------------------------------------------- Cara Memanggil Object Di Dalam Array
 
-const shoppingCart = [
-    {
-        product: 'vue.js',
-        price: 1.22,
-        quantity:3,
-    },
-    {
-        product: 'react.js',
-        price: 2.32,
-        quantity:1,
-    },
-    {
-        product: 'angular.js',
-        price: 3.32,
-        quantity:2,
-    },
-]
-console.log(shoppingCart)  ;
+// const shoppingCart = [
+//     {
+//         product: 'vue.js',
+//         price: 1.22,
+//         quantity:3,
+//     },
+//     {
+//         product: 'react.js',
+//         price: 2.32,
+//         quantity:1,
+//     },
+//     {
+//         product: 'angular.js',
+//         price: 3.32,
+//         quantity:2,
+//     },
+// ]
+// console.log(shoppingCart)  ;
 
-const student = {
-    firstName : 'David',
-    lastName : 'Beckham',
-    strengths: ['Foot','Balls'],
-    exam:{
-        midterm: 96,
-        final: 69
-    }
+// const student = {
+//     firstName : 'David',
+//     lastName : 'Beckham',
+//     strengths: ['Foot','Balls'],
+//     exam:{
+//         midterm: 96,
+//         final: 69
+//     }
+// }
+// console.log(student);
+// console.log(shoppingCart[0].product);
+// console.log(shoppingCart[0].price);
+// console.log(shoppingCart[0].quantity);
+// console.log(shoppingCart[0]['product']);
+
+
+// ---------------------------------------------------- Pengenalan Perulangan
+for(let i=1; i<=10; i+=1){
+    console.log('saya ada di dalam loop');
+    console.log(i);
 }
-console.log(student);
-console.log(shoppingCart[0].product);
-console.log(shoppingCart[0].price);
-console.log(shoppingCart[0].quantity);
-console.log(shoppingCart[0]['product']);
