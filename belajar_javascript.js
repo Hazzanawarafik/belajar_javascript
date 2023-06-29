@@ -312,6 +312,26 @@
 // console.log(fitnessData);
 
 // ---------------------------------------------------- Cara Membuat Struktur Data Object
+// const barang = {
+//     judul : 'Sepatu',
+//     harga : 2000000,
+//     isReady: true,
+//     size : ['38','39','40','41','42'],
+//     location: {
+//         indonesia: 48,
+//         singapore: 50
+//     }
+// }
+// console.log(barang);
+
+// ---------------------------------------------------- Cara Memanggil Data Dari Object
+const orang = {
+    nama: 'Aim',
+    tanggal: 16,
+    alamat: 'Cirebon',
+    isReady: true,
+}
+
 const barang = {
     judul : 'Sepatu',
     harga : 2000000,
@@ -322,4 +342,13 @@ const barang = {
         singapore: 50
     }
 }
-console.log(barang);
+console.log(orang['nama']);
+console.log(orang['tanggal']);
+console.log(orang['alamat']);
+console.log(orang.nama);
+console.log(orang.tanggal);
+console.log(orang.alamat);
+console.log(orang['is'+'Ready']);
+console.log(barang.location.indonesia);
+console.log(barang.size[0]);
+console.log(barang.size);
