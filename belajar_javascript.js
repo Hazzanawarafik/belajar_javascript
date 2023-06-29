@@ -354,19 +354,55 @@
 // console.log(barang.size);
 
 // ---------------------------------------------------- Cara Membuat Object Berjalan
-const orang = {
-    nama: 'Aim',
-    tanggal: 16,
-    alamat: 'Cirebon',
-    isReady: true,
-}
-console.log(orang['nama'] = 'Febby');
-console.log(orang);
-console.log(orang.tanggal = 2);
-console.log(orang);
+// const orang = {
+//     nama: 'Aim',
+//     tanggal: 16,
+//     alamat: 'Cirebon',
+//     isReady: true,
+// }
+// console.log(orang['nama'] = 'Febby');
+// console.log(orang);
+// console.log(orang.tanggal = 2);
+// console.log(orang);
 
-let alamat = 'alamat';
-console.log(orang[alamat] = 'Medan');
-console.log(orang);
-console.log(orang.gender = 'Perempuan');
-console.log(orang);
+// let alamat = 'alamat';
+// console.log(orang[alamat] = 'Medan');
+// console.log(orang);
+// console.log(orang.gender = 'Perempuan');
+// console.log(orang);
+
+// ---------------------------------------------------- Cara Memanggil Object Di Dalam Array
+
+const shoppingCart = [
+    {
+        product: 'vue.js',
+        price: 1.22,
+        quantity:3,
+    },
+    {
+        product: 'react.js',
+        price: 2.32,
+        quantity:1,
+    },
+    {
+        product: 'angular.js',
+        price: 3.32,
+        quantity:2,
+    },
+]
+console.log(shoppingCart)  ;
+
+const student = {
+    firstName : 'David',
+    lastName : 'Beckham',
+    strengths: ['Foot','Balls'],
+    exam:{
+        midterm: 96,
+        final: 69
+    }
+}
+console.log(student);
+console.log(shoppingCart[0].product);
+console.log(shoppingCart[0].price);
+console.log(shoppingCart[0].quantity);
+console.log(shoppingCart[0]['product']);
