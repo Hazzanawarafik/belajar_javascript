@@ -425,6 +425,13 @@
 // }
 
 // ---------------------------------------------------- Awas Perulangan Tanpa Henti
-for(let i=20; i>=0; i++){
-    console.log(i);
+// for(let i=20; i>=0; i++){
+//     console.log(i);
+// }
+
+// ---------------------------------------------------- Perulangan Dengan Array
+const animals = ['cat','deer','hog','koala'];
+
+for(let i=0; i<animals.length; i++){
+    console.log(i,animals[i])
 }
