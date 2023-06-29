@@ -325,30 +325,48 @@
 // console.log(barang);
 
 // ---------------------------------------------------- Cara Memanggil Data Dari Object
+// const orang = {
+//     nama: 'Aim',
+//     tanggal: 16,
+//     alamat: 'Cirebon',
+//     isReady: true,
+// }
+
+// const barang = {
+//     judul : 'Sepatu',
+//     harga : 2000000,
+//     isReady: true,
+//     size : ['38','39','40','41','42'],
+//     location: {
+//         indonesia: 48,
+//         singapore: 50
+//     }
+// }
+// console.log(orang['nama']);
+// console.log(orang['tanggal']);
+// console.log(orang['alamat']);
+// console.log(orang.nama);
+// console.log(orang.tanggal);
+// console.log(orang.alamat);
+// console.log(orang['is'+'Ready']);
+// console.log(barang.location.indonesia);
+// console.log(barang.size[0]);
+// console.log(barang.size);
+
+// ---------------------------------------------------- Cara Membuat Object Berjalan
 const orang = {
     nama: 'Aim',
     tanggal: 16,
     alamat: 'Cirebon',
     isReady: true,
 }
+console.log(orang['nama'] = 'Febby');
+console.log(orang);
+console.log(orang.tanggal = 2);
+console.log(orang);
 
-const barang = {
-    judul : 'Sepatu',
-    harga : 2000000,
-    isReady: true,
-    size : ['38','39','40','41','42'],
-    location: {
-        indonesia: 48,
-        singapore: 50
-    }
-}
-console.log(orang['nama']);
-console.log(orang['tanggal']);
-console.log(orang['alamat']);
-console.log(orang.nama);
-console.log(orang.tanggal);
-console.log(orang.alamat);
-console.log(orang['is'+'Ready']);
-console.log(barang.location.indonesia);
-console.log(barang.size[0]);
-console.log(barang.size);
+let alamat = 'alamat';
+console.log(orang[alamat] = 'Medan');
+console.log(orang);
+console.log(orang.gender = 'Perempuan');
+console.log(orang);
