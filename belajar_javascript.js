@@ -409,7 +409,17 @@
 
 
 // ---------------------------------------------------- Pengenalan Perulangan
-for(let i=1; i<=10; i+=1){
-    console.log('saya ada di dalam loop');
+// for(let i=1; i<=10; i+=1){
+//     console.log('saya ada di dalam loop');
+//     console.log(i);
+// }
+
+
+// ---------------------------------------------------- Contoh Lain Perulangan For
+// for(let i=1; i>=0; i--){
+//     console.log(i);
+// }
+
+for(let i=10; i<= 100000; i*=10){
     console.log(i);
 }
