@@ -455,16 +455,34 @@
 
 
 // ---------------------------------------------------- Mendapatkan Data Dari Nested Array Dengan Nested Loop
-const studentRow = [
-    ['Olivia','Liam','Emma','Noah'],
-    ['Amelia','Oliver','Ava','Elijah'],
-    ['Sophia','Mateo','Isabella','Lucas'],
-];
+// const studentRow = [
+//     ['Olivia','Liam','Emma','Noah'],
+//     ['Amelia','Oliver','Ava','Elijah'],
+//     ['Sophia','Mateo','Isabella','Lucas'],
+// ];
 
-for(let i=0; i<studentRow.length; i++){
-    const row = studentRow[i];
-    console.log(`Seat Row #${i+1}`);
-    for(let j=0; j<row.length; j++){
-        console.log(`      ${row[j]}`);
-    }
+// for(let i=0; i<studentRow.length; i++){
+//     const row = studentRow[i];
+//     console.log(`Seat Row #${i+1}`);
+//     for(let j=0; j<row.length; j++){
+//         console.log(`      ${row[j]}`);
+//     }
+// }
+
+
+// ---------------------------------------------------- Sintaks Perulangan While
+// let num = 0;
+// while(num < 10){
+//     console.log(num);
+//     num++;
+// }
+// for(let num = 0; num<10; num++){
+//     console.log(num);
+// }
+
+const PASSWORD = 'Pass123';
+let guess = prompt('enter the password');
+while(guess !== PASSWORD ){
+    guess = prompt('enter the password');
 }
+alert('congrats! the password is correct');
