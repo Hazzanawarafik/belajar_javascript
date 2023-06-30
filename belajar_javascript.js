@@ -480,9 +480,22 @@
 //     console.log(num);
 // }
 
-const PASSWORD = 'Pass123';
-let guess = prompt('enter the password');
-while(guess !== PASSWORD ){
-    guess = prompt('enter the password');
+// const PASSWORD = 'Pass123';
+// let guess = prompt('enter the password');
+// while(guess !== PASSWORD ){
+//     guess = prompt('enter the password');
+// }
+// alert('congrats! the password is correct');
+
+// ---------------------------------------------------- Kata kunci break untuk memberhentikan perulangan
+// let input = prompt('Hei , Say something!');
+// while(true){
+//     input= prompt(input);
+//     if(input.toLowerCase() === "stop") break;
+// }
+// alert ('ok');
+
+for(let i=0; i<10000; i++){
+    console.log(i);
+    if(i === 100)break;
 }
-alert('congrats! the password is correct');
