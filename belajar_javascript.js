@@ -526,22 +526,48 @@
 // for (variable of iterable){
 //     statement
 // }
-const fruits = ['Banana','Orange','Apple','Mango'];
+// const fruits = ['Banana','Orange','Apple','Mango'];
 // for(let i=0; i<fruits.length; i++){
 //     console.log(`Buang ${fruits[i]}`);
 // }
 
-for(let fruit of fruits){
-    console.log(`Buah ${fruit}`);
-}
+// for(let fruit of fruits){
+//     console.log(`Buah ${fruit}`);
+// }
 
-const studentRow = [
-    ['Olivia','Liam','Emma','Noah'],
-    ['Amelia','Oliver','Ava','Elijah'],
-    ['Sophia','Mateo','Isabella','Lucas'],
-];
-for (let row of studentRow){
-    for(let student of row){
-        console.log(student)
-    }
+// const studentRow = [
+//     ['Olivia','Liam','Emma','Noah'],
+//     ['Amelia','Oliver','Ava','Elijah'],
+//     ['Sophia','Mateo','Isabella','Lucas'],
+// ];
+// for (let row of studentRow){
+//     for(let student of row){
+//         console.log(student)
+//     }
+// }
+
+
+// ---------------------------------------------------- Melakukan Perulangan Pada Object Dengan Elegan For In
+
+const studentScore = {
+    Olivia: 20,
+    Liam: 13,
+    EmmaL: 40,
+    Noah: 18,
+    Amelia: 32,
+    Oliver: 10,
+    Ava: 11,
+    ELijah: 21,
+    Sophia: 14,
+    Mateo: 22,
 }
+// for(let student in studentScore){
+//     console.log(`${student}memiliki skor ${studentScore[student]}`);
+// }
+
+let total = 0;
+let scores = Object.values(studentScore);
+for(let score of scores){
+    total += score;
+}
+console.log(total/scores.length);
