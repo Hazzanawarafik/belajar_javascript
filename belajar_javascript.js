@@ -579,7 +579,17 @@
 // bisa dibuat lebih awal dan digunakan 
 // akan sering digunakan
 
-function lemparDadu(){
-    console.log(Math.floor(Math.random() * 6 + 1));
+// function lemparDadu(){
+//     console.log(Math.floor(Math.random() * 6 + 1));
+// }
+// console.log(lemparDadu());
+
+// ---------------------------------------------------- Mendefinisikan Dan Menjalankan Function
+function nyanyi(){
+    console.log('Cek....');
+    console.log('Do Re Mi....');
 }
-console.log(lemparDadu());
+
+nyanyi();
+nyanyi();
+nyanyi();
