@@ -549,25 +549,37 @@
 
 // ---------------------------------------------------- Melakukan Perulangan Pada Object Dengan Elegan For In
 
-const studentScore = {
-    Olivia: 20,
-    Liam: 13,
-    EmmaL: 40,
-    Noah: 18,
-    Amelia: 32,
-    Oliver: 10,
-    Ava: 11,
-    ELijah: 21,
-    Sophia: 14,
-    Mateo: 22,
-}
+// const studentScore = {
+//     Olivia: 20,
+//     Liam: 13,
+//     EmmaL: 40,
+//     Noah: 18,
+//     Amelia: 32,
+//     Oliver: 10,
+//     Ava: 11,
+//     ELijah: 21,
+//     Sophia: 14,
+//     Mateo: 22,
+// }
 // for(let student in studentScore){
 //     console.log(`${student}memiliki skor ${studentScore[student]}`);
 // }
 
-let total = 0;
-let scores = Object.values(studentScore);
-for(let score of scores){
-    total += score;
+// let total = 0;
+// let scores = Object.values(studentScore);
+// for(let score of scores){
+//     total += score;
+// }
+// console.log(total/scores.length);
+
+
+// ---------------------------------------------------- Pengenalan Function Di Javascript
+// Function 
+// potongan kode memungkinkan digunakan kembali
+// bisa dibuat lebih awal dan digunakan 
+// akan sering digunakan
+
+function lemparDadu(){
+    console.log(Math.floor(Math.random() * 6 + 1));
 }
-console.log(total/scores.length);
+console.log(lemparDadu());
