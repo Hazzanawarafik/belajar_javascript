@@ -637,10 +637,39 @@
 
 // ---------------------------------------------------- Visibilitas Variabel Sesuai Scope Atau Ruang Lingkup
 
-let programming = 'Javascript';
-function typeSafe(){
-    programming = 'TypeScript';
-    console.log(programming);
+// let programming = 'Javascript';
+// function typeSafe(){
+//     programming = 'TypeScript';
+//     console.log(programming);
+// }
+// typeSafe();
+// console.log(programming);
+
+
+
+// ---------------------------------------------------- Block Scope Variable
+// menggunakan const dan let untuk block scope variable jangna menggunakan var berbahaya karna dapat digunakan diluar 
+
+let tinggi = 8;
+if(tinggi > 5){
+    var lebar = 10;
+    console.log(lebar);
 }
-typeSafe();
-console.log(programming);
+
+console.log('lebar:',lebar);
+
+for(let index = 0; index < 10; index ++){
+    var lebar = index;
+    // console.log(indexNumber);
+}
+console.log('lebar:',lebar);
+
+// jika menggunakan let/ const maka panjang tidak bisa digunakan
+let hasil = 8;
+if(hasil > 5){
+    const panjang = 10;
+    console.log(panjang);
+}
+
+console.log('panjang:',panjang);
+
