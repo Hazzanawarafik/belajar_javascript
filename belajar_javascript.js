@@ -585,11 +585,21 @@
 // console.log(lemparDadu());
 
 // ---------------------------------------------------- Mendefinisikan Dan Menjalankan Function
-function nyanyi(){
-    console.log('Cek....');
-    console.log('Do Re Mi....');
-}
+// function nyanyi(){
+//     console.log('Cek....');
+//     console.log('Do Re Mi....');
+// }
 
-nyanyi();
-nyanyi();
-nyanyi();
+// nyanyi();
+// nyanyi();
+// nyanyi();
+
+// ---------------------------------------------------- Argument Dan Parameter Dalam Function
+function greet(name){
+    console.log(`hi ${name}`);
+}
+greet('jason');
+function selamatPagi(name){
+    console.log(`hallo,${name}. Selamat Pagi! `);
+}
+selamatPagi('Aim');
