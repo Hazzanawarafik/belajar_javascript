@@ -605,8 +605,29 @@
 // selamatPagi('Aim');
 
 // ---------------------------------------------------- Multiple Parameter Dan Argument
-function jumlahkan(a = null,b = null){
-    const total = a+b;
-    console.log(total);
+// function jumlahkan(a = null,b = null){
+//     const total = a+b;
+//     console.log(total);
+// }
+// jumlahkan(1,7);
+
+
+
+// ---------------------------------------------------- Statement Return Pada Function
+// Return adalah statement "return" akan mengakhiri proses di dalam fungsi dan akan memberikan nilai yang didefinisikan pada saat fungsi dipanggil
+function jumlahkan(a,b){
+    const total = a + b
+    return total;
 }
-jumlahkan(1,7);
+
+const hasil = jumlahkan(1,3) + 4;
+console.log(hasil);
+
+function tambahkan(a,b){
+    if(typeof a !== 'number' || typeof b !== 'number'){
+        return 'Bukan Angka';
+    }
+    return a + b;
+}
+const berapa = tambahkan(5,6) * 2;
+console.log(berapa);
