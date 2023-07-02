@@ -595,11 +595,18 @@
 // nyanyi();
 
 // ---------------------------------------------------- Argument Dan Parameter Dalam Function
-function greet(name){
-    console.log(`hi ${name}`);
+// function greet(name){
+//     console.log(`hi ${name}`);
+// }
+// greet('jason');
+// function selamatPagi(name){
+//     console.log(`hallo,${name}. Selamat Pagi! `);
+// }
+// selamatPagi('Aim');
+
+// ---------------------------------------------------- Multiple Parameter Dan Argument
+function jumlahkan(a = null,b = null){
+    const total = a+b;
+    console.log(total);
 }
-greet('jason');
-function selamatPagi(name){
-    console.log(`hallo,${name}. Selamat Pagi! `);
-}
-selamatPagi('Aim');
+jumlahkan(1,7);
