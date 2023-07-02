@@ -615,19 +615,32 @@
 
 // ---------------------------------------------------- Statement Return Pada Function
 // Return adalah statement "return" akan mengakhiri proses di dalam fungsi dan akan memberikan nilai yang didefinisikan pada saat fungsi dipanggil
-function jumlahkan(a,b){
-    const total = a + b
-    return total;
-}
+// function jumlahkan(a,b){
+//     const total = a + b
+//     return total;
+// }
 
-const hasil = jumlahkan(1,3) + 4;
-console.log(hasil);
+// const hasil = jumlahkan(1,3) + 4;
+// console.log(hasil);
 
-function tambahkan(a,b){
-    if(typeof a !== 'number' || typeof b !== 'number'){
-        return 'Bukan Angka';
-    }
-    return a + b;
+// function tambahkan(a,b){
+//     if(typeof a !== 'number' || typeof b !== 'number'){
+//         return 'Bukan Angka';
+//     }
+//     return a + b;
+// }
+// const berapa = tambahkan(5,6) * 2;
+// console.log(berapa);
+
+
+
+
+// ---------------------------------------------------- Visibilitas Variabel Sesuai Scope Atau Ruang Lingkup
+
+let programming = 'Javascript';
+function typeSafe(){
+    programming = 'TypeScript';
+    console.log(programming);
 }
-const berapa = tambahkan(5,6) * 2;
-console.log(berapa);
+typeSafe();
+console.log(programming);
