@@ -676,27 +676,42 @@
 
 
 // ---------------------------------------------------- Lexical Scope
-function funcLuar(){
-    const nilaiLuar = "Ini string nilai luar";
-    function funcDalam(){
+// function funcLuar(){
+//     const nilaiLuar = "Ini string nilai luar";
+//     function funcDalam(){
 
-        let nilaiDalam = `di dalam mengambil ${nilaiLuar}`;
-        console.log(nilaiDalam);
-    }
-    funcDalam();
-}
-funcLuar();
+//         let nilaiDalam = `di dalam mengambil ${nilaiLuar}`;
+//         console.log(nilaiDalam);
+//     }
+//     funcDalam();
+// }
+// funcLuar();
 
-function lamarKerja(){
-    const jabatan = 'Programmer'
+// function lamarKerja(){
+//     const jabatan = 'Programmer'
     
-    function lebihDalam(){
-        function orangDalam(){
-            let kenalan = `Orang dalam bisa memasukkan ${jabatan}`;
-            console.log(kenalan);
-        }
-        orangDalam();
-    }
-    lebihDalam();
+//     function lebihDalam(){
+//         function orangDalam(){
+//             let kenalan = `Orang dalam bisa memasukkan ${jabatan}`;
+//             console.log(kenalan);
+//         }
+//         orangDalam();
+//     }
+//     lebihDalam();
+// }
+// lamarKerja();
+
+
+
+// ---------------------------------------------------- Function Expressions
+const Hasilperpangkatan =  function(nilai){
+    return nilai * nilai;
 }
-lamarKerja();
+console.log(Hasilperpangkatan(9));
+
+
+function perpangkatan(nilai){
+    return nilai * nilai;
+}
+let hasil = perpangkatan(5);
+console.log(hasil);
