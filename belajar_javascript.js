@@ -704,14 +704,27 @@
 
 
 // ---------------------------------------------------- Function Expressions
-const Hasilperpangkatan =  function(nilai){
-    return nilai * nilai;
-}
-console.log(Hasilperpangkatan(9));
+// const Hasilperpangkatan =  function(nilai){
+//     return nilai * nilai;
+// }
+// console.log(Hasilperpangkatan(9));
 
 
-function perpangkatan(nilai){
-    return nilai * nilai;
+// function perpangkatan(nilai){
+//     return nilai * nilai;
+// }
+// let hasil = perpangkatan(5);
+// console.log(hasil);
+
+
+
+// ---------------------------------------------------- Function Sebagai Argument Function Lain
+function duaKali(func){
+    func();
+    func();
 }
-let hasil = perpangkatan(5);
-console.log(hasil);
+function lemparDadu(){
+    const nilai = Math.floor(Math.random()*6)+1;
+    console.log(nilai);
+}
+console.log(duaKali(lemparDadu));
