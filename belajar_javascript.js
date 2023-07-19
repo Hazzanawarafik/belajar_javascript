@@ -733,16 +733,44 @@
 
 // ---------------------------------------------------- Function Bernilai Balik Function
 
-function hasilnyaaAdalahFunction(){
-    const rand = Math.random();
-    if(rand > 0.1){
-        return function(){
-            console.log('Selamat, angkanya lebih besar');
-        }
-    }else{
-        return function (){
-            console.log('Maaf, mungkin bisa coba lagi');
-        }
+// function hasilnyaaAdalahFunction(){
+//     const rand = Math.random();
+//     if(rand > 0.1){
+//         return function(){
+//             console.log('Selamat, angkanya lebih besar');
+//         }
+//     }else{
+//         return function (){
+//             console.log('Maaf, mungkin bisa coba lagi');
+//         }
+//     }
+// }
+// hasilnyaaAdalahFunction();
+
+
+// ---------------------------------------------------- Definisi Sebuah Method
+
+
+// Method adalah ketika menambahkan function pada suatu object property
+// const aritmatika = {
+//     perkalian: function(x,y){
+//         return x*y
+//     },
+//     pembagi: function (x,y){
+//         return x/y
+//     },
+//     pangkat: function(x){
+//         return x*x
+//     }
+// }
+function myFun(){ // function biasa
+    console.log('Hi');
+    return 'Hello';
+}
+
+const myMath = { //object
+    perkalian: function(x,y){ // method
+        return x*y;
     }
 }
-hasilnyaaAdalahFunction();
+console.log(myMath.perkalian(8,6));
