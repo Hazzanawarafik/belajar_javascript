@@ -763,14 +763,35 @@
 //         return x*x
 //     }
 // }
-function myFun(){ // function biasa
-    console.log('Hi');
-    return 'Hello';
-}
+// function myFun(){ // function biasa
+//     console.log('Hi');
+//     return 'Hello';
+// }
 
-const myMath = { //object
-    perkalian: function(x,y){ // method
-        return x*y;
+// const myMath = { //object
+//     perkalian: function(x,y){ // method
+//         return x*y;
+//     }
+// }
+// console.log(myMath.perkalian(8,6));
+
+// ---------------------------------------------------- This adalah keyword sakti
+// `this`
+// adalah keyword untuk memanggil suatu property pada object yang sama. 
+// Tujuannya untuk mendapatkan nilainya.
+// const saya = {
+//     nama: 'Aim',
+//     email: 'Mancing keributan',
+//     kenalan: function(){
+//         return `Saya ${this.nama}. Hobi saya ${this.hobi}`
+//     }
+// }
+const saya = {
+    nama: 'Aim',
+    hobi: 'Mancing ikan',
+    kenalan: function(){
+        return `Hi, saya ${this.nama}. Hobi saya ${this.hobi}`;
     }
 }
-console.log(myMath.perkalian(8,6));
+console.log(saya.kenalan());
+
