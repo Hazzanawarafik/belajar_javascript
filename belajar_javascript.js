@@ -748,8 +748,10 @@
 // hasilnyaaAdalahFunction();
 
 
-// ---------------------------------------------------- Definisi Sebuah Method
 
+
+
+// ---------------------------------------------------- Definisi Sebuah Method
 
 // Method adalah ketika menambahkan function pada suatu object property
 // const aritmatika = {
@@ -775,6 +777,9 @@
 // }
 // console.log(myMath.perkalian(8,6));
 
+
+
+
 // ---------------------------------------------------- This adalah keyword sakti
 // `this`
 // adalah keyword untuk memanggil suatu property pada object yang sama. 
@@ -786,12 +791,36 @@
 //         return `Saya ${this.nama}. Hobi saya ${this.hobi}`
 //     }
 // }
-const saya = {
-    nama: 'Aim',
-    hobi: 'Mancing ikan',
-    kenalan: function(){
-        return `Hi, saya ${this.nama}. Hobi saya ${this.hobi}`;
+// const saya = {
+//     nama: 'Aim',
+//     hobi: 'Mancing ikan',
+//     kenalan: function(){
+//         return `Hi, saya ${this.nama}. Hobi saya ${this.hobi}`;
+//     }
+// }
+// console.log(saya.kenalan());
+
+
+
+
+// ---------------------------------------------------- Try And Catch Adalah Penyelamat
+// try{
+//     saya.kenalan();
+// }catch{
+//     console.log('error!!!');
+// }
+// saya.kenalan();
+// console.log('Setelah proses try and catch');
+
+function teriak(msg){
+    try{
+        console.log(msg.toUpperCase());
+    }catch(error){
+        console.log(error);
+        console.log('Silakan masukkan tipe data string pada argument teriak ()');
     }
 }
-console.log(saya.kenalan());
+console.log(teriak('Ojek !!'));
+console.log(teriak(313123));
+
 
