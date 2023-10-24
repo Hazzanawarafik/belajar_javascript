@@ -803,7 +803,7 @@
 
 
 
-// ---------------------------------------------------- Try And Catch Adalah Penyelamat
+// ---------------------------------------------------- Try And Catch Adalah Penyelamat 
 // try{
 //     saya.kenalan();
 // }catch{
@@ -812,15 +812,60 @@
 // saya.kenalan();
 // console.log('Setelah proses try and catch');
 
-function teriak(msg){
-    try{
-        console.log(msg.toUpperCase());
-    }catch(error){
-        console.log(error);
-        console.log('Silakan masukkan tipe data string pada argument teriak ()');
+// function teriak(msg){
+//     try{
+//         console.log(msg.toUpperCase());
+//     }catch(error){
+//         console.log(error);
+//         console.log('Silakan masukkan tipe data string pada argument teriak ()');
+//     }
+// }
+// console.log(teriak('Ojek !!'));
+// console.log(teriak(313123));
+
+
+
+
+// ---------------------------------------------------- Foreach Method
+// 'forEach'
+// dapat menggunakan callback function yang berarti dapat memanggil sebuah fungsi sebanyak jumlah element yang dimiliki array
+
+const angka = [1,2,3,4,5,6,7,8,9];
+
+// angka.forEach(function(n){
+//     console.log(n*n)
+//     // output: 1,4,9,16...
+// })
+
+angka.forEach(function(el){
+    if(el % 2 === 0){
+        console.log(el);
     }
-}
-console.log(teriak('Ojek !!'));
-console.log(teriak(313123));
+})
 
+const anime = [
+    {
+        title : 'Attack on Titan',
+        rating: 90,
+    },
+    {
+        title: 'One Piece',
+        rating: 89,
+    },
+    {
+        title: 'Bleach',
+        rating: 82,
+    },
+    {
+        title: 'Hunter x Hunter',
+        rating: 90,
+    },
+    {
+        title: 'Naruto',
+        rating: 84,
+    },
+];
 
+anime.forEach(function(anime){
+    console.log(`${anime.title} - ${anime.rating}/100`);
+});
