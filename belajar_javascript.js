@@ -62,7 +62,7 @@
 //     console.log('Yah biasa aja');
 // }
 
-// ---------------------------------------------------- Cek kondisi berlapis 
+// ---------------------------------------------------- Cek kondisi berlapis
 // const password = prompt("Buat password");
 
 // // Password harus sepanjang 6 karakter
@@ -85,7 +85,7 @@
 // let gender = 'male';
 
 // if(gender === 'male' && age === 19){
-//     console.log("Legal!"); 
+//     console.log("Legal!");
 // }
 
 // const password = prompt("Buat password");
@@ -121,7 +121,7 @@
 //     console.log('boleh mengaksesnya');
 // }
 
-// ---------------------------------------------------- SWITCH 
+// ---------------------------------------------------- SWITCH
 
 // const day = 4;
 // switch(day){
@@ -574,9 +574,9 @@
 
 
 // ---------------------------------------------------- Pengenalan Function Di Javascript
-// Function 
+// Function
 // potongan kode memungkinkan digunakan kembali
-// bisa dibuat lebih awal dan digunakan 
+// bisa dibuat lebih awal dan digunakan
 // akan sering digunakan
 
 // function lemparDadu(){
@@ -648,7 +648,7 @@
 
 
 // ---------------------------------------------------- Block Scope Variable
-// menggunakan const dan let untuk block scope variable jangna menggunakan var berbahaya karna dapat digunakan diluar 
+// menggunakan const dan let untuk block scope variable jangna menggunakan var berbahaya karna dapat digunakan diluar
 
 // let tinggi = 8;
 // if(tinggi > 5){
@@ -689,7 +689,7 @@
 
 // function lamarKerja(){
 //     const jabatan = 'Programmer'
-    
+
 //     function lebihDalam(){
 //         function orangDalam(){
 //             let kenalan = `Orang dalam bisa memasukkan ${jabatan}`;
@@ -782,7 +782,7 @@
 
 // ---------------------------------------------------- This adalah keyword sakti
 // `this`
-// adalah keyword untuk memanggil suatu property pada object yang sama. 
+// adalah keyword untuk memanggil suatu property pada object yang sama.
 // Tujuannya untuk mendapatkan nilainya.
 // const saya = {
 //     nama: 'Aim',
@@ -803,7 +803,7 @@
 
 
 
-// ---------------------------------------------------- Try And Catch Adalah Penyelamat 
+// ---------------------------------------------------- Try And Catch Adalah Penyelamat
 // try{
 //     saya.kenalan();
 // }catch{
@@ -830,20 +830,66 @@
 // 'forEach'
 // dapat menggunakan callback function yang berarti dapat memanggil sebuah fungsi sebanyak jumlah element yang dimiliki array
 
-const angka = [1,2,3,4,5,6,7,8,9];
+// const angka = [1,2,3,4,5,6,7,8,9];
 
 // angka.forEach(function(n){
 //     console.log(n*n)
 //     // output: 1,4,9,16...
 // })
 
-angka.forEach(function(el){
-    if(el % 2 === 0){
-        console.log(el);
-    }
+// angka.forEach(function(el){
+//     if(el % 2 === 0){
+//         console.log(el);
+//     }
+// })
+
+// const anime = [
+//     {
+//         title : 'Attack on Titan',
+//         rating: 90,
+//     },
+//     {
+//         title: 'One Piece',
+//         rating: 89,
+//     },
+//     {
+//         title: 'Bleach',
+//         rating: 82,
+//     },
+//     {
+//         title: 'Hunter x Hunter',
+//         rating: 90,
+//     },
+//     {
+//         title: 'Naruto',
+//         rating: 84,
+//     },
+// ];
+
+// anime.forEach(function(anime){
+//     console.log(`${anime.title} - ${anime.rating}/100`);
+// });
+
+
+
+// ---------------------------------------------------- Map Method
+const expression = ['rofl','lol','omg','ttyl'];
+const capsExpression = expression.map(function(exprs){
+    return exprs.toUpperCase();
 })
 
-const anime = [
+console.log(expression);
+console.log(capsExpression);
+
+const angka = [1,2,3,4,5,6,7,8,9];
+const angkaDouble = angka.map(function (num){
+    return num * 2;
+});
+
+console.log(angka);
+console.log(angkaDouble);
+
+const animes = [
     {
         title : 'Attack on Titan',
         rating: 90,
@@ -866,6 +912,9 @@ const anime = [
     },
 ];
 
-anime.forEach(function(anime){
-    console.log(`${anime.title} - ${anime.rating}/100`);
-});
+const animeList = animes.map(function(anime){
+    return anime.title.toUpperCase();
+})
+
+console.log(animes);
+console.log(animeList);
