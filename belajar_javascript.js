@@ -873,48 +873,71 @@
 
 
 // ---------------------------------------------------- Map Method
-const expression = ['rofl','lol','omg','ttyl'];
-const capsExpression = expression.map(function(exprs){
-    return exprs.toUpperCase();
-})
+// const expression = ['rofl','lol','omg','ttyl'];
+// const capsExpression = expression.map(function(exprs){
+//     return exprs.toUpperCase();
+// })
 
-console.log(expression);
-console.log(capsExpression);
+// console.log(expression);
+// console.log(capsExpression);
 
-const angka = [1,2,3,4,5,6,7,8,9];
-const angkaDouble = angka.map(function (num){
-    return num * 2;
-});
+// const angka = [1,2,3,4,5,6,7,8,9];
+// const angkaDouble = angka.map(function (num){
+//     return num * 2;
+// });
 
-console.log(angka);
-console.log(angkaDouble);
+// console.log(angka);
+// console.log(angkaDouble);
 
-const animes = [
-    {
-        title : 'Attack on Titan',
-        rating: 90,
-    },
-    {
-        title: 'One Piece',
-        rating: 89,
-    },
-    {
-        title: 'Bleach',
-        rating: 82,
-    },
-    {
-        title: 'Hunter x Hunter',
-        rating: 90,
-    },
-    {
-        title: 'Naruto',
-        rating: 84,
-    },
-];
+// const animes = [
+//     {
+//         title : 'Attack on Titan',
+//         rating: 90,
+//     },
+//     {
+//         title: 'One Piece',
+//         rating: 89,
+//     },
+//     {
+//         title: 'Bleach',
+//         rating: 82,
+//     },
+//     {
+//         title: 'Hunter x Hunter',
+//         rating: 90,
+//     },
+//     {
+//         title: 'Naruto',
+//         rating: 84,
+//     },
+// ];
 
-const animeList = animes.map(function(anime){
-    return anime.title.toUpperCase();
-})
+// const animeList = animes.map(function(anime){
+//     return anime.title.toUpperCase();
+// })
 
-console.log(animes);
-console.log(animeList);
+// console.log(animes);
+// console.log(animeList);
+
+
+
+// ---------------------------------------------------- Sebelum lanjut kenalan dengan arrow function
+const perpangkatan = (x) => {
+    return x * x;
+}
+console.log(perpangkatan(5));
+
+const hasil = function (x){
+  return x*x;  
+};
+console.log(hasil(6));
+
+const pangkat = (x) => {
+    return x * x;
+};
+console.log(pangkat(7));
+
+const random = () => {
+    return Math.floor(Math.random() * 1000);
+};
+console.log(random());
