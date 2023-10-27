@@ -928,7 +928,7 @@
 // console.log(perpangkatan(5));
 
 // const hasil = function (x){
-//   return x*x;  
+//   return x*x;
 // };
 // console.log(hasil(6));
 
@@ -945,10 +945,33 @@
 
 
 // ---------------------------------------------------- Return secara implisit dari arrow function
-const random = () => (
-    Math.floor(Math.random() * 1000)
-);
-console.log(random());
+// const random = () => (
+//     Math.floor(Math.random() * 1000)
+// );
+// console.log(random());
 
-const add = (a,b) => a + b
-console.log(add(9,5));
+// const add = (a,b) => a + b
+// console.log(add(9,5));
+
+
+
+// ---------------------------------------------------- Memahami settimeout dan setinterval
+// setTimeout(() => {
+//     //process
+// },3000) //proses akan dieksekusi setelah 3 detik
+
+// setInterval(() => {
+//     //process
+// },2000) // akan melakukan proses secara berulang setiap 2 detik
+
+console.log('Hallo');
+setTimeout(() => {
+    console.log('apakah masih disana ?');
+},5000)
+console.log('saya pergi ya !');
+
+
+// const interval = setInterval(() => {
+//     console.log(Math.random());
+// }, 3000);
+// console.log(clearInterval()); //untuk mematikan interval
