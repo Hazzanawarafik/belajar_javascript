@@ -964,14 +964,73 @@
 //     //process
 // },2000) // akan melakukan proses secara berulang setiap 2 detik
 
-console.log('Hallo');
-setTimeout(() => {
-    console.log('apakah masih disana ?');
-},5000)
-console.log('saya pergi ya !');
+// console.log('Hallo');
+// setTimeout(() => {
+//     console.log('apakah masih disana ?');
+// },5000)
+// console.log('saya pergi ya !');
 
 
 // const interval = setInterval(() => {
 //     console.log(Math.random());
 // }, 3000);
 // console.log(clearInterval()); //untuk mematikan interval
+
+
+
+// ---------------------------------------------------- Memilih data tertentu  di dalam array dengan filter method
+// const angka  = [1,2,3,4,5,6,7,8,9];
+// const ganjil = angka.filter(n => {
+//     return n % 2 ===1; // jika nilai angka adalah angka ganjil maka
+//     //callback function akan membuat array baru berisi angka angka ganjil
+//     //dari kondisi atas
+// }); // [1,3,5,7,9]
+// console.log(ganjil);
+
+
+// const kurang5 =  angka.filter(n => {
+//     return n < 5;
+// });
+// console.log(kurang5);
+
+
+const animes = [
+    {
+        title : 'Attack on Titan',
+        rating: 90,
+        year : 2009
+    },
+    {
+        title: 'One Piece',
+        rating: 89,
+        year : 2008
+    },
+    {
+        title: 'Bleach',
+        rating: 82,
+        year : 2011
+    },
+    {
+        title: 'Hunter x Hunter',
+        rating: 90,
+        year: 2016
+    },
+    {
+        title: 'Naruto',
+        rating: 84,
+        year : 2019
+    },
+];
+const animeBagus = animes.filter((anime) => anime.rating >= 85);
+console.log(animeBagus);
+const cukupBagus = animes.filter((anime) => anime.rating <= 85);
+console.log(cukupBagus);
+const animeBaru = animes.filter((anime) => anime.year > 2010);
+console.log(animeBaru);
+const judulAnimeBagus = animeBagus.map((anime) => anime.title);
+
+const gabungan = animes
+.filter((anime) => anime.rating >= 85)
+.map((anime) => anime.title);
+console.log(gabungan);
+
