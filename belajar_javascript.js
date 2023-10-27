@@ -922,22 +922,33 @@
 
 
 // ---------------------------------------------------- Sebelum lanjut kenalan dengan arrow function
-const perpangkatan = (x) => {
-    return x * x;
-}
-console.log(perpangkatan(5));
+// const perpangkatan = (x) => {
+//     return x * x;
+// }
+// console.log(perpangkatan(5));
 
-const hasil = function (x){
-  return x*x;  
-};
-console.log(hasil(6));
+// const hasil = function (x){
+//   return x*x;  
+// };
+// console.log(hasil(6));
 
-const pangkat = (x) => {
-    return x * x;
-};
-console.log(pangkat(7));
+// const pangkat = (x) => {
+//     return x * x;
+// };
+// console.log(pangkat(7));
 
-const random = () => {
-    return Math.floor(Math.random() * 1000);
-};
+// const random = () => {
+//     return Math.floor(Math.random() * 1000);
+// };
+// console.log(random());
+
+
+
+// ---------------------------------------------------- Return secara implisit dari arrow function
+const random = () => (
+    Math.floor(Math.random() * 1000)
+);
 console.log(random());
+
+const add = (a,b) => a + b
+console.log(add(9,5));
