@@ -1038,16 +1038,65 @@
 
 
 // ---------------------------------------------------- Menentukan benar atau salah pada array dengan every dan some method
-const examScore = [80,85,79,90,93,77];
-const isGraduate =  examScore.every((score) => score >= 75);
-console.log(isGraduate);
+// const examScore = [80,85,79,90,93,77];
+// const isGraduate =  examScore.every((score) => score >= 75);
+// console.log(isGraduate);
+
+// const animes = [
+//     {
+//         title : 'Attack on Titan',
+//         rating: 90,
+//         year: 2010,
+//     },
+//     {
+//         title: 'One Piece',
+//         rating: 89,
+//         year: 2008,
+//     },
+//     {
+//         title: 'Bleach',
+//         rating: 82,
+//         year: 2011,
+//     },
+//     {
+//         title: 'Hunter x Hunter',
+//         rating: 90,
+//         year: 2016,
+//     },
+//     {
+//         title: 'Naruto',
+//         rating: 84,
+//         year: 2019,
+//     },
+// ];
+
+// const isAnimeListNew = animes.some((anime) => anime.year < 2010);
+// console.log(isAnimeListNew);
+
+
+
+// ---------------------------------------------------- Mendapatkan satu nilai sesuai kondisi dari sebuah array dengan reduce
+const subTotal = [1500,20000,4000,19000,32000];
+const total = subTotal.reduce((currentTotal,singleSubtotal)=>{
+    return currentTotal + singleSubtotal
+})
+console.log(total);
+
+
+const examScore = [80,85,70,90,93,77];
+let totals = 0;
+for(let score of examScore){
+    totals +=score
+}
+console.log(totals);
+
+const Totals = examScore.reduce((total,score)=> {
+    return total+score;
+})
+console.log(totals);
+
 
 const animes = [
-    {
-        title : 'Attack on Titan',
-        rating: 90,
-        year: 2010,
-    },
     {
         title: 'One Piece',
         rating: 89,
@@ -1068,7 +1117,18 @@ const animes = [
         rating: 84,
         year: 2019,
     },
+    {
+        title: 'Attack on Titan',
+        rating: 92,
+        year: 2010,
+    }
 ];
 
-const isAnimeListNew = animes.some((anime) => anime.year < 2010);
-console.log(isAnimeListNew);
+const bestAnime = animes.reduce((bestAnime, currAnime)=>{
+    console.log(bestAnime,currAnime);
+    if(currAnime.rating > bestAnime.rating){
+        return currAnime;
+    }
+    return bestAnime;
+})
+console.log(bestAnime);
