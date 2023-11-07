@@ -994,43 +994,81 @@
 // console.log(kurang5);
 
 
+// const animes = [
+//     {
+//         title : 'Attack on Titan',
+//         rating: 90,
+//         year : 2009
+//     },
+//     {
+//         title: 'One Piece',
+//         rating: 89,
+//         year : 2008
+//     },
+//     {
+//         title: 'Bleach',
+//         rating: 82,
+//         year : 2011
+//     },
+//     {
+//         title: 'Hunter x Hunter',
+//         rating: 90,
+//         year: 2016
+//     },
+//     {
+//         title: 'Naruto',
+//         rating: 84,
+//         year : 2019
+//     },
+// ];
+// const animeBagus = animes.filter((anime) => anime.rating >= 85);
+// console.log(animeBagus);
+// const cukupBagus = animes.filter((anime) => anime.rating <= 85);
+// console.log(cukupBagus);
+// const animeBaru = animes.filter((anime) => anime.year > 2010);
+// console.log(animeBaru);
+// const judulAnimeBagus = animeBagus.map((anime) => anime.title);
+
+// const gabungan = animes
+// .filter((anime) => anime.rating >= 85)
+// .map((anime) => anime.title);
+// console.log(gabungan);
+
+
+
+
+// ---------------------------------------------------- Menentukan benar atau salah pada array dengan every dan some method
+const examScore = [80,85,79,90,93,77];
+const isGraduate =  examScore.every((score) => score >= 75);
+console.log(isGraduate);
+
 const animes = [
     {
         title : 'Attack on Titan',
         rating: 90,
-        year : 2009
+        year: 2010,
     },
     {
         title: 'One Piece',
         rating: 89,
-        year : 2008
+        year: 2008,
     },
     {
         title: 'Bleach',
         rating: 82,
-        year : 2011
+        year: 2011,
     },
     {
         title: 'Hunter x Hunter',
         rating: 90,
-        year: 2016
+        year: 2016,
     },
     {
         title: 'Naruto',
         rating: 84,
-        year : 2019
+        year: 2019,
     },
 ];
-const animeBagus = animes.filter((anime) => anime.rating >= 85);
-console.log(animeBagus);
-const cukupBagus = animes.filter((anime) => anime.rating <= 85);
-console.log(cukupBagus);
-const animeBaru = animes.filter((anime) => anime.year > 2010);
-console.log(animeBaru);
-const judulAnimeBagus = animeBagus.map((anime) => anime.title);
 
-const gabungan = animes
-.filter((anime) => anime.rating >= 85)
-.map((anime) => anime.title);
-console.log(gabungan);
-
+const isAnimeListNew = animes.some((anime) => anime.year < 2010);
+console.log(isAnimeListNew);
