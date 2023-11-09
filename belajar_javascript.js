@@ -1136,18 +1136,32 @@
 
 
 // ---------------------------------------------------- Object this di dalam arrow function mengarah pada object global window
-const person ={
-    firstName: 'John',
-    lastName: 'Doe',
-    fullName:()=>{
-        console.log(this);
-        return `${this.firstName} ${this.lastName}`;
-    },
-    panggilNanti: function(){
-        setTimeout(function(){
-            console.log(this.firstName);
-        },3000);
-    }
-}
+// const person ={
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     fullName:()=>{
+//         console.log(this);
+//         return `${this.firstName} ${this.lastName}`;
+//     },
+//     panggilNanti: function(){
+//         setTimeout(function(){
+//             console.log(this.firstName);
+//         },3000);
+//     }
+// }
 
-console.log(person.panggilNanti());
+// console.log(person.panggilNanti());
+
+
+
+// ---------------------------------------------------- Mengatur Default Value pada Function
+function lemparDadu(sisi = 6){
+    return Math.floor(Math.random()* sisi)+1;
+}
+console.log(lemparDadu(12));
+
+function sapa(nama = '',msg = 'selamat bekerja'){
+    console.log(`${nama},${msg}`);
+}
+console.log(sapa('aim','hello world'));
+console.log(sapa());
