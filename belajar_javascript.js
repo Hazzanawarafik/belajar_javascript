@@ -1176,11 +1176,28 @@
 
 
 // ---------------------------------------------------- Menggabungkan nilai array dengan array lagi
-const angka = [1,2,3,4,5,6,7,8,9];
-const nama = ['alex','bimo','gilang','elix','uci'];
+// const angka = [1,2,3,4,5,6,7,8,9];
+// const nama = ['alex','bimo','gilang','elix','uci'];
 
-angka.push(0);
-console.log(angka);
+// angka.push(0);
+// console.log(angka);
 
-const campuran = [...angka,...nama];
-console.log(campuran);
+// const campuran = [...angka,...nama];
+// console.log(campuran);
+
+
+
+
+// ---------------------------------------------------- Menggabungkan property object dengan object lainnya
+const user = {
+    name : 'John',
+    email : 'john@doe.com',
+};
+
+
+const userBaru = {
+    ...user,id:123, password: 'password'
+};
+
+console.log(user);
+console.log(userBaru);
