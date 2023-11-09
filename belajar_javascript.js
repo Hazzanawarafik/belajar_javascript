@@ -1169,6 +1169,18 @@
 
 
 // ---------------------------------------------------- Mengubah array atau object menjadi deret value argument function
+// const angka = [1,2,3,4,5,6,7,8,9];
+// console.log(Math.max(...angka));
+// console.log(Math.min(...angka));
+
+
+
+// ---------------------------------------------------- Menggabungkan nilai array dengan array lagi
 const angka = [1,2,3,4,5,6,7,8,9];
-console.log(Math.max(...angka));
-console.log(Math.min(...angka));
+const nama = ['alex','bimo','gilang','elix','uci'];
+
+angka.push(0);
+console.log(angka);
+
+const campuran = [...angka,...nama];
+console.log(campuran);
