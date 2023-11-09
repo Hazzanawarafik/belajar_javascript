@@ -1155,13 +1155,20 @@
 
 
 // ---------------------------------------------------- Mengatur Default Value pada Function
-function lemparDadu(sisi = 6){
-    return Math.floor(Math.random()* sisi)+1;
-}
-console.log(lemparDadu(12));
+// function lemparDadu(sisi = 6){
+//     return Math.floor(Math.random()* sisi)+1;
+// }
+// console.log(lemparDadu(12));
 
-function sapa(nama = '',msg = 'selamat bekerja'){
-    console.log(`${nama},${msg}`);
-}
-console.log(sapa('aim','hello world'));
-console.log(sapa());
+// function sapa(nama = '',msg = 'selamat bekerja'){
+//     console.log(`${nama},${msg}`);
+// }
+// console.log(sapa('aim','hello world'));
+// console.log(sapa());
+
+
+
+// ---------------------------------------------------- Mengubah array atau object menjadi deret value argument function
+const angka = [1,2,3,4,5,6,7,8,9];
+console.log(Math.max(...angka));
+console.log(Math.min(...angka));
