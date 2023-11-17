@@ -1206,16 +1206,25 @@
 
 
 // ---------------------------------------------------- Malas bikin parameter banyak bisa pakai rest param
-const sumAll = (...nums)=>{
-    return nums.reduce((total,el) => total + el);
-};
-console.log(sumAll(1,2,3,4,5,32,12));
+// const sumAll = (...nums)=>{
+//     return nums.reduce((total,el) => total + el);
+// };
+// console.log(sumAll(1,2,3,4,5,32,12));
 
+// const nama = ['Alex','Bimo','Cici','Delita','Felix','Gerad'];
+// const pemenang = (gold,silver,bronze, ...sisa)=>{
+//     console.log(`Medali emas diraih: ${gold}`);
+//     console.log(`Medali silver diraih:  ${silver}`);
+//     console.log(`Medali bronze diraih: ${bronze}`);
+//     console.log(`Peserta lainnya: ${sisa}`);
+// }
+// console.log(pemenang(...nama));
+
+
+// ---------------------------------------------------- Bongkar Element Array Ke Masing - Masing Variabel Dengan Mudah
 const nama = ['Alex','Bimo','Cici','Delita','Felix','Gerad'];
-const pemenang = (gold,silver,bronze, ...sisa)=>{
-    console.log(`Medali emas diraih: ${gold}`);
-    console.log(`Medali silver diraih:  ${silver}`);
-    console.log(`Medali bronze diraih: ${bronze}`);
-    console.log(`Peserta lainnya: ${sisa}`);
-}
-console.log(pemenang(...nama));
+const [gold,silver,bronze, ...peserta] = nama;
+console.log(gold);
+console.log(silver);
+console.log(bronze);
+console.log(peserta);
