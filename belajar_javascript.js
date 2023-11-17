@@ -1189,15 +1189,33 @@
 
 
 // ---------------------------------------------------- Menggabungkan property object dengan object lainnya
-const user = {
-    name : 'John',
-    email : 'john@doe.com',
+// const user = {
+//     name : 'John',
+//     email : 'john@doe.com',
+// };
+
+
+// const userBaru = {
+//     ...user,id:123, password: 'password'
+// };
+
+// console.log(user);
+// console.log(userBaru);
+
+
+
+
+// ---------------------------------------------------- Malas bikin parameter banyak bisa pakai rest param
+const sumAll = (...nums)=>{
+    return nums.reduce((total,el) => total + el);
 };
+console.log(sumAll(1,2,3,4,5,32,12));
 
-
-const userBaru = {
-    ...user,id:123, password: 'password'
-};
-
-console.log(user);
-console.log(userBaru);
+const nama = ['Alex','Bimo','Cici','Delita','Felix','Gerad'];
+const pemenang = (gold,silver,bronze, ...sisa)=>{
+    console.log(`Medali emas diraih: ${gold}`);
+    console.log(`Medali silver diraih:  ${silver}`);
+    console.log(`Medali bronze diraih: ${bronze}`);
+    console.log(`Peserta lainnya: ${sisa}`);
+}
+console.log(pemenang(...nama));
