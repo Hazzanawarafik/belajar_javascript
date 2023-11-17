@@ -1233,12 +1233,70 @@
 
 
 // ---------------------------------------------------- Bongkar Juga Properti Object Ke Masing - Masing Variabel
+// const user = {
+//     name:'John',
+//     email: 'jhon@gmail.com',
+// };
+
+// const{name : nama,email, phone = '08233343423'} = user;
+// console.log(nama);
+// console.log(email);
+// console.log(phone);
+
+
+
+// ---------------------------------------------------- Bongkar Properti Object Bisa Dilakukan Di Dalam Function
 const user = {
     name:'John',
     email: 'jhon@gmail.com',
+    role: 'Admin',
 };
 
-const{name : nama,email, phone = '08233343423'} = user;
-console.log(nama);
-console.log(email);
-console.log(phone);
+const userAndRole = ({name,role}) => {
+    return `${name} ${role}`; 
+}
+console.log(userAndRole(user));
+
+const animes = [
+    {
+        title : 'Attack on Titan',
+        rating: 90,
+        year: 2000,
+    },
+    {
+        title: 'One Piece',
+        rating: 89,
+        year: 2010,
+    },
+    {
+        title: 'Bleach',
+        rating: 82,
+        year: 2011,
+    },
+    {
+        title: 'Hunter x Hunter',
+        rating: 90,
+        year: 1992,
+    },
+    {
+        title: 'Naruto',
+        rating: 84,
+        year: 1992,
+    },
+];
+
+const anime = animes.map((anime) =>{
+    return `${anime.title} (${anime.year}) rating ${anime.rating}`;
+});
+console.log(anime);
+
+const akun = {
+    names: 'user',
+    email: 'user@gmail.com',
+    roles: 'admin'
+}
+
+const akunAndRole= ({names,roles}) => {
+    return `${names} - ${roles}`
+}
+console.log(akunAndRole(akun));
