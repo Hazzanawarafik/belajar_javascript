@@ -1221,10 +1221,24 @@
 // console.log(pemenang(...nama));
 
 
+
 // ---------------------------------------------------- Bongkar Element Array Ke Masing - Masing Variabel Dengan Mudah
-const nama = ['Alex','Bimo','Cici','Delita','Felix','Gerad'];
-const [gold,silver,bronze, ...peserta] = nama;
-console.log(gold);
-console.log(silver);
-console.log(bronze);
-console.log(peserta);
+// const nama = ['Alex','Bimo','Cici','Delita','Felix','Gerad'];
+// const [gold,silver,bronze, ...peserta] = nama;
+// console.log(gold);
+// console.log(silver);
+// console.log(bronze);
+// console.log(peserta);
+
+
+
+// ---------------------------------------------------- Bongkar Juga Properti Object Ke Masing - Masing Variabel
+const user = {
+    name:'John',
+    email: 'jhon@gmail.com',
+};
+
+const{name : nama,email, phone = '08233343423'} = user;
+console.log(nama);
+console.log(email);
+console.log(phone);
